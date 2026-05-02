@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambulance Heat Map</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: sans-serif; background: #111; color: #eee; }
+    #map { width: 100vw; height: 100vh; }
+    #controls {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(0,0,0,0.7);
+      padding: 1rem;
+      border-radius: 8px;
+      z-index: 1000;
+    }
+    h1 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <h1>Ambulance Response Heat Map</h1>
+    <p style="font-size:0.85rem;color:#aaa;">Add your data to get started.</p>
+  </div>
+  <div id="map"></div>
+  <script>
+    // Placeholder: wire up your mapping library (Leaflet, Mapbox, etc.) here
+    document.getElementById('map').style.background = '#1a1a2e';
+  </script>
+</body>
+</html>
